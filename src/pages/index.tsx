@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>eyeduh</title>
+        <title>EYEDUH</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
