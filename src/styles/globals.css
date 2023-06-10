@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+html,
+body {
+  height: 100%;
+  overscroll-behavior: none;
+  background-image: url("/assets/background.png");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
 @layer base {
   body {
     @apply bg-[#ecf0f3] text-[#1f2937] tracking-wide;
