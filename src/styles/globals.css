@@ -9,9 +9,14 @@ body {
   background-image: url("/assets/background.png");
   background-attachment: fixed;
   background-size: cover;
+  /* background-color: rgb(211, 128, 96); */
 }
 
 @layer base {
+  html {
+    font-family: "Courier New", Courier, monospace;
+  }
+
   body {
     @apply bg-[#ecf0f3] text-[#1f2937] tracking-wide;
   }
@@ -26,7 +31,7 @@ body {
   }
 
   h1 {
-    @apply text-4xl sm:text-5xl md:text-6xl;
+    @apply text-4xl sm:text-5xl md:text-6xl lg:text-7xl 2xl:text-6xl;
   }
 
   h2 {
@@ -39,5 +44,9 @@ body {
 
   button {
     @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#5651e5] to-[#709dff] text-white;
+  }
+
+  p {
+    @apply text-base md:text-base lg:text-lg 2xl:text-2xl;
   }
 }
