@@ -8,7 +8,7 @@ const Layout = ({ children }: PropsWithChildren) => {
         <div className="w-full bg-opacity-30 md:w-[30%]">
           <Navbar />
         </div>
-        <div className="p-5 m-auto flex-1 shadow-xl shadow-black w-full  h-full flex items-center">
+        <div className="p-5 m-auto flex-1 shadow-xl bg-white bg-opacity-30 shadow-black w-full min-h-screen flex items-center">
           {children}
         </div>
       </div>

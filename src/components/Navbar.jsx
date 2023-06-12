@@ -3,6 +3,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose, AiOutlineMail } from "react-icons/ai";
 import logo from "../../public/assets/eyeduhlogo.png";
+import head from "../../public/assets/headlogo.png";
 
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 const Navbar = () => {
@@ -17,13 +18,13 @@ const Navbar = () => {
         <div className="flex-col w-full h-full py-4 px-4">
           <div className="w-auto h-auto m-auto">
             <Link className="flex justify-normal" href="/">
-              <Image src={logo} alt="/" />
+              <Image src={head} alt="/" />
             </Link>
           </div>
 
           <div className="flex-col py-4 items-center justify-end">
             <ul>
-              <Link href="/">
+              <Link href="/about">
                 <li className="ml- md:text-[4px] lg:text-xl 2xl:text-[40px] uppercase hover:border-b py-4">
                   About
                 </li>

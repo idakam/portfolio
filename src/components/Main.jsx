@@ -1,20 +1,42 @@
+import Image from "next/image";
 import React from "react";
+import head from "../../public/assets/headlogo.png";
 
 const Main = () => {
+  const repeatText = () => {};
   return (
-    <div className="flex flex-col w-full h-screen text-center">
-      {/* // <div className="flex h-full flex-col justify-center items-center"> */}
-      {/* <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center"> */}
-      <div>
-        <div>
-          <p className="uppercase text-sm tracking-widest text-gray-600">
-            Welcome asidjhfalskdjf;laskdjf;laskdjf;lsadkjf;lsajdf;lsajdf
-            asdlkfjasdf sdkfaslkdfjlsakdf ksjdflkasjdflsadf
-            jksdlfjlaskdjflsdkjfa skldjflkasjdflksdjfasdf
-          </p>
-          <h1 className="py-4 text-gray">Eyeduh</h1>
-        </div>
-      </div>
+    <div className="relative text-justify items-center justify-center ">
+      <Image src={head} alt="/" className="z-100 fixed" />
+      <p className="z-0 uppercase tracking-widest  text-black">
+        hello my name is ida (eye-duh) and welcome to my website hello my name
+        is ida (eye-duh) and welcome to my website hello my name is ida
+        (eye-duh) and welcome to my website hello my name is ida (eye-duh) and
+        welcome to my website hello my name is ida (eye-duh) and welcome to my
+        websitehello my name is ida (eye-duh) and welcome to my websites hello
+        my name is ida (eye-duh) and welcome to my website hello my name is ida
+        (eye-duh) and welcome to my website hello my name is ida (eye-duh) and
+        welcome to my website hello my name is ida (eye-duh) and welcome to my
+        website hello my name is ida (eye-duh) and welcome to my websitehello my
+        name is ida (eye-duh) and welcome to my websitehello my name is ida
+        (eye-duh) and welcome to my websiteshello my name is ida (eye-duh) and
+        welcome to my website hello my name is ida (eye-duh) and welcome to my
+        website hello my name is ida (eye-duh) and welcome to my website hello
+        my name is ida (eye-duh) and welcome to my website hello my name is ida
+        (eye-duh) and welcome to my website hello my name is ida (eye-duh) and
+        welcome to my website hello my name is ida (eye-duh) and welcome to my
+        websites hello my name is ida (eye-duh) and welcome to my website hello
+        my name is ida (eye-duh) and welcome to my website hello my name is ida
+        (eye-duh) and welcome to my website hello my name is ida (eye-duh) and
+        welcome to my website hello my name is ida (eye-duh) and welcome to my
+        websitehello my name is ida (eye-duh) and welcome to my website hello my
+        name is ida (eye-duh) and welcome to my websites hello my name is ida
+        (eye-duh) and welcome to my website hello hello my name is ida (eye-duh)
+        and welcome to my website hello my name is ida (eye-duh) and welcome to
+        my website hello my name is ida (eye-duh) and welcome to my website
+        hello my name is ida (eye-duh) and welcome to my website hello my name
+        is ida (eye-duh) and welcome to my websitehello my name is ida (eye-duh)
+        and welcome to my website
+      </p>
     </div>
   );
 };

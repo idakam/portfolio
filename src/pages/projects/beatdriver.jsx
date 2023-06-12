@@ -8,12 +8,12 @@ const Beatdriver = () => {
     <div id="about" className="">
       <div className="gap-8">
         <div className="col-span-2">
-          <h2 className="uppercase text-xl tracking-widest text-[#0e1f26]">
+          <p className="uppercase text-xl tracking-widest text-[#0e1f26]">
             Projects
-          </h2>
-          <h1 className="py-4">Beatdriver</h1>
+          </p>
+          <h1 className="py-4 uppercase">Beatdriver</h1>
           <div>
-            <p className="py-2 text-black">
+            <p className="py-2 uppercase tracking-widest">
               I specialize in building mobile responsive front-end UI
               applications that connect with API’s and other backend
               technologies. I’m passionate about learning new technologies and
@@ -24,7 +24,7 @@ const Beatdriver = () => {
               developer is not using one specific language, but choosing the
               best tool for the job.
             </p>
-            <p className="py-2 text-black">
+            <p className="py-2 uppercase tracking-widest">
               I started web developement in 2013 managing multiple e-commerce
               websites on CMS platforms such as WordPress, BigCommerce, and
               Shopify. I have experience working directly with clients and
