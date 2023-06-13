@@ -6,7 +6,7 @@ import selfie from "../../public/assets/selfie.png";
 const About = () => {
   return (
     <div id="about" className="lg:mx-[10%] 2xl:mx-[15%]">
-      <p className="uppercase text-xl tracking-widest text-[#0e1f26]">About</p>
+      <p className="uppercase text-xl tracking-widest text-red-700">About</p>
       <h1 className="py-4 uppercase">Eyeduh</h1>
       <div className="flex flex-col">
         <p className="py-2 tracking-widest">

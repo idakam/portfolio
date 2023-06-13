@@ -8,7 +8,7 @@ const Beatdriver = () => {
     <div id="about" className="">
       <div className="gap-8">
         <div className="col-span-2">
-          <p className="uppercase text-xl tracking-widest text-[#0e1f26] ">
+          <p className="uppercase text-xl tracking-widest text-red-700 ">
             Projects
           </p>
           <h1 className="py-4 uppercase">Beatdriver</h1>

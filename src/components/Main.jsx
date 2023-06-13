@@ -4,8 +4,8 @@ import head from "../../public/assets/headlogo.png";
 
 const Main = () => {
   return (
-    <div className="fixed -my-10 mr-4 text-justify items-center justify-center ">
-      <p className="z-0 uppercase tracking-widest text-black">
+    <div className="fixed mr-4 text-justify items-center justify-center ">
+      <p className="z-0 uppercase tracking-widest text-black overflow-y-hidden sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">
         hello my name is ida <span className="text-red-700">(eye-duh)</span> and
         welcome to my website hello my name is ida{" "}
         <span className="text-red-700">(eye-duh)</span> and welcome to my

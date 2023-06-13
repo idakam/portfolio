@@ -15,47 +15,45 @@ const Navbar = () => {
   return (
     <>
       <nav className="hidden md:flex w-full h-screen overflow-scroll ">
-        <div className="flex-1 flex-col w-full py-4 px-4">
-          <div className="w-auto h-auto m-auto">
+        <div className="flex flex-col w-full py-4 px-4">
+          <div className="flex-1 w-auto h-auto m-auto">
             <Link className="" href="/">
               <Image src={head} alt="/" />
             </Link>
           </div>
 
-          <div className="flex flex-col">
+          <div className="flex flex-col sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-3xl px-[5%]">
             <ul>
               <Link href="/about">
-                <li className="ml- lg:text-2xl 2xl:text-3xl font-bold uppercase hover:border-b py-4">
-                  About
-                </li>
+                <li className="ml- uppercase hover:border-b">About</li>
               </Link>
-              <ul className="ml- lg:text-xl 2xl:text-[40px] uppercase py-2">
-                <span className="">Projects</span>
+              <ul className="ml- uppercase py-2">
+                <span className="md:text-xs lg:text-sm xl:text-base 2xl:text-lg">
+                  Projects
+                </span>
                 <Link href="/projects/beatdriver">
-                  <li className="font-bold lg:text-2xl 2xl:text-3xl  uppercase hover:border-b py-.5">
+                  <li className=" uppercase hover:border-b py-.5">
                     Beatdriver
                   </li>
                 </Link>
-                <Link href="/projects/rbeatdrive">
-                  <li className="font-bold lg:text-2xl 2xl:text-3xl  uppercase hover:border-b py-.5">
+                <Link href="/projects/vinylshop">
+                  <li className=" uppercase hover:border-b py-.5">
                     Vinyl Shop
                   </li>
                 </Link>
                 <Link href="/projects/beatdriver">
-                  <li className="font-bold lg:text-2xl 2xl:text-3xl  uppercase hover:border-b py-.5">
-                    Manican
-                  </li>
+                  <li className="  uppercase hover:border-b py-.5">Manican</li>
                 </Link>
               </ul>
-              <ul className="ml- lg:text-xl 2xl:text-[40px] uppercase py-2">
-                <span className="">MISC</span>
+              <ul className="ml- uppercase py-2">
+                <span className="md:text-xs lg:text-sm xl:text-base 2xl:text-lg">
+                  MISC
+                </span>
                 <Link href="/projects/beatdriver">
-                  <li className="font-bold lg:text-2xl 2xl:text-3xl  uppercase hover:border-b py-.5">
-                    Painting
-                  </li>
+                  <li className=" uppercase hover:border-b py-.5">Painting</li>
                 </Link>
                 <Link href="/projects/beatdriver">
-                  <li className="font-bold lg:text-2xl 2xl:text-[25px]  uppercase hover:border-b py-.5">
+                  <li className=" uppercase hover:border-b py-.5">
                     Video + Design
                   </li>
                 </Link>
@@ -79,21 +77,22 @@ const Navbar = () => {
         {" "}
         <AiOutlineMenu size={40} />
       </div>
+      {/* bg-[url('../../public/assets/background.png')] */}
       <div
         className={
           menuOpen
-            ? "fixed left-0 top-0 w-[90%] md:hidden h-screen shadow-xl bg-slate-100 p-10 ease-in duration-500 z-40"
-            : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
+            ? "fixed left-0 top-0 w-full md:hidden h-screen p-5 ease-in duration-500 z-40 bg-cover bg-[url('../../public/assets/background.png')]"
+            : "hidden"
         }
       >
-        <div className="flex w-full items-center justify-end">
+        <div className="flex w-full justify-end">
           <div onClick={handleNav} className="cursor-pointer ">
             <AiOutlineClose size={40} />
           </div>
         </div>
-        <div className="max-w-[400px] h-auto m-auto">
+        <div className="py-5 max-w-[400px] h-auto m-auto">
           <Link className="flex justify-center" onClick={handleNav} href="/">
-            <Image src={logo} alt="/" />
+            <Image src={head} alt="/" />
           </Link>
         </div>
 
@@ -143,7 +142,7 @@ const Navbar = () => {
             </ul>
           </ul>
         </div>
-        <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
+        <div className="flex items-center justify-between my-4 w-full sm:w-[100%]">
           <div className="rounded-full shadow-xl shadow-gray-400 p-2 cursor-pointer hover:scale-105 ease-in duration-300">
             <FaLinkedinIn />
           </div>
