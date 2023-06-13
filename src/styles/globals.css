@@ -47,6 +47,6 @@ body {
   }
 
   p {
-    @apply text-base md:text-base lg:text-lg 2xl:text-2xl;
+    @apply text-base md:text-base lg:text-lg;
   }
 }

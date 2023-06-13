@@ -14,84 +14,75 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="hidden md:flex fixed min-h-screen w-[30%]">
-        <div className="flex-col w-full h-full py-4 px-4">
+      <nav className="hidden md:flex w-full h-screen overflow-scroll ">
+        <div className="flex-1 flex-col w-full py-4 px-4">
           <div className="w-auto h-auto m-auto">
-            <Link className="flex justify-normal" href="/">
+            <Link className="" href="/">
               <Image src={head} alt="/" />
             </Link>
           </div>
 
-          <div className="flex-col py-4 items-center justify-end">
+          <div className="flex flex-col">
             <ul>
               <Link href="/about">
-                <li className="ml- md:text-[4px] lg:text-xl 2xl:text-[40px] uppercase hover:border-b py-4">
+                <li className="ml- lg:text-2xl 2xl:text-3xl font-bold uppercase hover:border-b py-4">
                   About
                 </li>
               </Link>
-              <ul className="ml- 2xl:text-[40px] uppercase py-2">
-                Projects
+              <ul className="ml- lg:text-xl 2xl:text-[40px] uppercase py-2">
+                <span className="">Projects</span>
                 <Link href="/projects/beatdriver">
-                  <li className="ml-2 2xl:text-[25px] uppercase hover:border-b py-.5">
+                  <li className="font-bold lg:text-2xl 2xl:text-3xl  uppercase hover:border-b py-.5">
                     Beatdriver
                   </li>
                 </Link>
-                <Link href="/projects/beatdriver">
-                  <li className="ml-2 2xl:text-[25px] uppercase hover:border-b py-.5">
+                <Link href="/projects/rbeatdrive">
+                  <li className="font-bold lg:text-2xl 2xl:text-3xl  uppercase hover:border-b py-.5">
                     Vinyl Shop
                   </li>
                 </Link>
                 <Link href="/projects/beatdriver">
-                  <li className="ml-2 2xl:text-[25px] uppercase hover:border-b py-.5">
+                  <li className="font-bold lg:text-2xl 2xl:text-3xl  uppercase hover:border-b py-.5">
                     Manican
                   </li>
                 </Link>
               </ul>
-
-              <ul className="ml- 2xl:text-[40px]  uppercase py-2">
-                Art
+              <ul className="ml- lg:text-xl 2xl:text-[40px] uppercase py-2">
+                <span className="">MISC</span>
                 <Link href="/projects/beatdriver">
-                  <li className="ml-2 2xl:text-[25px]  uppercase hover:border-b py-.5">
+                  <li className="font-bold lg:text-2xl 2xl:text-3xl  uppercase hover:border-b py-.5">
                     Painting
                   </li>
                 </Link>
                 <Link href="/projects/beatdriver">
-                  <li className="ml-2 2xl:text-[25px]  uppercase hover:border-b py-.5">
+                  <li className="font-bold lg:text-2xl 2xl:text-[25px]  uppercase hover:border-b py-.5">
                     Video + Design
-                  </li>
-                </Link>
-                <Link href="/projects/beatdriver">
-                  <li className="ml-2 2xl:text-[25px]  uppercase hover:border-b py-.5">
-                    Misc
                   </li>
                 </Link>
               </ul>
             </ul>
-          </div>
-          <div className="flex items-center justify-around w-full sm:w-[80%]">
-            <div className="rounded-full shadow-xl shadow-gray-400 p-2 cursor-pointer hover:scale-105 ease-in duration-300">
-              <FaLinkedinIn />
-            </div>
-            <div className="rounded-full shadow-xl shadow-gray-400 p-2 cursor-pointer hover:scale-105 ease-in duration-300">
-              <FaGithub />
-            </div>
-            <div className="rounded-full shadow-xl shadow-gray-400 p-2 cursor-pointer hover:scale-105 ease-in duration-300">
-              <AiOutlineMail />
+            <div className="flex items-center justify-around w-full">
+              <div className="rounded-full shadow-xl shadow-gray-400 p-2 cursor-pointer hover:scale-105 ease-in duration-300">
+                <FaLinkedinIn />
+              </div>
+              <div className="rounded-full shadow-xl shadow-gray-400 p-2 cursor-pointer hover:scale-105 ease-in duration-300">
+                <FaGithub />
+              </div>
+              <div className="rounded-full shadow-xl shadow-gray-400 p-2 cursor-pointer hover:scale-105 ease-in duration-300">
+                <AiOutlineMail />
+              </div>
             </div>
           </div>
         </div>
       </nav>
-      <div
-        onClick={handleNav}
-        className="fixed md:hidden cursor-pointer w-full"
-      >
+      <div onClick={handleNav} className="flex md:hidden cursor-pointer w-full">
         {" "}
         <AiOutlineMenu size={40} />
       </div>
       <div
         className={
           menuOpen
-            ? "fixed left-0 top-0 w-[90%] md:hidden h-screen shadow-xl bg-slate-100 p-10 ease-in duration-500"
+            ? "fixed left-0 top-0 w-[90%] md:hidden h-screen shadow-xl bg-slate-100 p-10 ease-in duration-500 z-40"
             : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
         }
       >
