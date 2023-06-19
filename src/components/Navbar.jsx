@@ -64,15 +64,15 @@ const Navbar = () => {
                     Groove Records
                   </li>
                 </Link>
-                <Link href="/projects/manican">
+                <Link href="/projects/posedetection">
                   <li
                     className={
-                      router.pathname == "/projects/manican"
+                      router.pathname == "/projects/posedetection"
                         ? "ml- uppercase text-red-700 font-bold"
                         : "ml- uppercase hover:text-red-700"
                     }
                   >
-                    Manican
+                    3D Pose Detection
                   </li>
                 </Link>
               </ul>
@@ -162,16 +162,18 @@ const Navbar = () => {
                     Groove Records
                   </li>
                 </Link>
-                <Link href="/projects/beatdriver">
-                  <li className="  uppercase hover:text-red-700 ">Manican</li>
+                <Link href="/projects/posedetection">
+                  <li className="  uppercase hover:text-red-700 ">
+                    3D Pose Detection
+                  </li>
                 </Link>
               </ul>
               <ul className="ml- uppercase py-2">
                 <span className="text-3xl">MISC</span>
-                <Link href="/projects/beatdriver">
+                <Link href="/misc/painting">
                   <li className=" uppercase hover:text-red-700">Painting</li>
                 </Link>
-                <Link href="/projects/beatdriver">
+                <Link href="/misc/design">
                   <li className=" uppercase hover:text-red-700">
                     Video + Design
                   </li>
