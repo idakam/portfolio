@@ -80,13 +80,25 @@ const Navbar = () => {
                 <span className="md:text-xs lg:text-sm xl:text-base 2xl:text-lg">
                   MISC
                 </span>
-                <Link href="/projects/beatdriver">
-                  <li className=" uppercase hover:text-red-700 py-.5">
+                <Link href="/misc/painting">
+                  <li
+                    className={
+                      router.pathname == "/misc/painting"
+                        ? "ml- uppercase text-red-700 font-bold"
+                        : "ml- uppercase hover:text-red-700"
+                    }
+                  >
                     Painting
                   </li>
                 </Link>
-                <Link href="/projects/beatdriver">
-                  <li className=" uppercase hover:text-red-700 py-.5">
+                <Link href="/misc/design">
+                  <li
+                    className={
+                      router.pathname == "/misc/design"
+                        ? "ml- uppercase text-red-700 font-bold"
+                        : "ml- uppercase hover:text-red-700"
+                    }
+                  >
                     Video + Design
                   </li>
                 </Link>
