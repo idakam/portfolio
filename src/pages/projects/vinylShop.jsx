@@ -4,7 +4,7 @@ import Link from "next/link";
 import Project from "../../components/Project";
 import projectImg from "../../../public/assets/projects/beatdriver.png";
 
-const vinylShop = () => {
+const VinylShop = () => {
   return (
     <Project
       type="Projects"
@@ -17,4 +17,4 @@ const vinylShop = () => {
   );
 };
 
-export default vinylShop;
+export default VinylShop;
