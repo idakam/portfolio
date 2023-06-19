@@ -1,46 +1,52 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import logo from "../../../public/assets/eyeduhlogo.png";
+import projectImg from "../../../public/assets/projects/beatdriver.png";
 
 const Beatdriver = () => {
   return (
-    <div id="about" className="">
+    <div id="about" className="lg:mx-[10%] 2xl:mx-[15%]">
       <div className="gap-8">
         <div className="col-span-2">
           <p className="uppercase text-xl tracking-widest text-red-700 ">
             Projects
           </p>
           <h1 className="py-4 uppercase">Beatdriver</h1>
-          <div>
+          <div className="flex flex-col">
             <p className="py-2  tracking-widest">
-              I specialize in building mobile responsive front-end UI
-              applications that connect with API’s and other backend
-              technologies. I’m passionate about learning new technologies and
-              understand there is more than one way to accomplish a task. Though
-              I am most proficient in building front-end applications using
-              HTML, CSS, Javascript, and React, I am a quick learner and can
-              pick up new tech stacks as needed. I believe that being a great
-              developer is not using one specific language, but choosing the
-              best tool for the job.
+              Beatdriver is a beginner friendly music creation tool that you can
+              use right in the browser. Users can create beats with built-in
+              sounds and effects, upload their own samples, and save and record
+              their project to share with anyone!
             </p>
+            <div className="relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl group opacity-80 hover:bg-gradient-to-r from-[#0b316e] to-[#3d69e4]">
+              <Image
+                className="rounded-xl group-hover:opacity-10"
+                src={projectImg}
+                alt="/"
+              />
+              <div className="hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
+                <Link href="www.beatdriver.vercel.com">
+                  <p className="text-center py-3 text-white font-bold text-lg cursor-pointer hover:scale-105">
+                    Deployed
+                  </p>
+                </Link>
+                <Link href="www.beatdriver.vercel.com">
+                  <p className="text-center py-3 text-white font-bold text-lg cursor-pointer hover:scale-105">
+                    Github
+                  </p>
+                </Link>
+              </div>
+            </div>
+
             <p className="py-2  tracking-widest">
-              I started web developement in 2013 managing multiple e-commerce
-              websites on CMS platforms such as WordPress, BigCommerce, and
-              Shopify. I have experience working directly with clients and
-              taking mock wireframes all the way to deployed applications. In my
-              spare time I run Code Commerce, a Youtube channel where I teach
-              web developement and various front-end technologies.
+              Using Web Audio Api and TUNAJs, an audio effects library,
+              Beatdriver uses modular routing system to create a mixer with 4
+              different effects: Chorus, Phaser, Tremolo and Moog. As a user,
+              you can also browse a Discover page showcasing all saved
+              creations, complete with visual previews of board states.
             </p>
-            <Link href="/#projects">
-              <p className="py-2 text-gray-600 underline cursor-pointer">
-                Check out some of my latest projects.
-              </p>
-            </Link>
           </div>
-        </div>
-        <div className="w-auto h-auto m-auto rounded-xl flex items-center justify-center py-4 hover:scale-105 ease-in duration-300">
-          <Image src={logo} className="rounded-xl" alt="/" />
         </div>
       </div>
     </div>
