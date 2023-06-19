@@ -106,13 +106,31 @@ const Navbar = () => {
             </ul>
             <div className="flex items-center justify-around w-full">
               <div className="rounded-full shadow-xl shadow-gray-400 p-2 cursor-pointer hover:scale-105 ease-in duration-300">
-                <FaLinkedinIn />
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/in/ida-kam/"
+                  rel="noopener noreferrer"
+                >
+                  <FaLinkedinIn />
+                </a>
               </div>
               <div className="rounded-full shadow-xl shadow-gray-400 p-2 cursor-pointer hover:scale-105 ease-in duration-300">
-                <FaGithub />
+                <a
+                  target="_blank"
+                  href="https://github.com/idakam"
+                  rel="noopener noreferrer"
+                >
+                  <FaGithub />
+                </a>
               </div>
               <div className="rounded-full shadow-xl shadow-gray-400 p-2 cursor-pointer hover:scale-105 ease-in duration-300">
-                <AiOutlineMail />
+                <a
+                  target="_blank"
+                  href="mailto:ida.kamali10@gmail.com"
+                  rel="noopener noreferrer"
+                >
+                  <AiOutlineMail />
+                </a>
               </div>
             </div>
           </div>
@@ -194,8 +212,15 @@ const Navbar = () => {
             </ul>
             <div className="flex items-center justify-around w-full">
               <div className="rounded-full shadow-xl shadow-gray-400 p-2 cursor-pointer hover:scale-105 ease-in duration-300">
-                <FaLinkedinIn />
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/in/ida-kam/"
+                  rel="noopener noreferrer"
+                >
+                  <FaLinkedinIn />
+                </a>
               </div>
+
               <div className="rounded-full shadow-xl shadow-gray-400 p-2 cursor-pointer hover:scale-105 ease-in duration-300">
                 <FaGithub />
               </div>
