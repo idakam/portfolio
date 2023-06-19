@@ -53,10 +53,10 @@ const Navbar = () => {
                     Beatdriver
                   </li>
                 </Link>
-                <Link href="/projects/vinylshop">
+                <Link href="/projects/grooverecords">
                   <li
                     className={
-                      router.pathname == "/projects/vinylshop"
+                      router.pathname == "/projects/grooverecords"
                         ? "ml- uppercase text-red-700 font-bold"
                         : "ml- uppercase hover:text-red-700"
                     }
