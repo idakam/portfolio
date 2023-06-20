@@ -8,6 +8,7 @@ const ModelViewer = dynamic(import("../components/Three/ModelViewer"), {
 });
 
 const Main = () => {
+  console.log(ModelViewer);
   return (
     <>
       {/* <ModelViewer modelPath={"/assets/faceblend.glb"} /> */}
