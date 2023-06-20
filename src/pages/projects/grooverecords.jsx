@@ -10,8 +10,19 @@ const VinylShop = () => {
       type="Projects"
       title="The Groove Records"
       projectImg={projectImg}
-      p1="Groove Records is an e-commerce website using the PERN stack and Material UI. It has various features for adding, increasing/decreasing, and removing items from the cart. Visitors can look through product, filter products by searching and add them to their cart. Visitors can also create an account to edit and finalize their orders. The code allows visitors a persistent cart that they can revisit and pick up Users can also view their order and purchase history as well as update their information. The code also features administrator features where if an administrator logs in, they have full rights to make backend requests to add, edit, and remove products as well as view all user information."
-      p2="Using Web Audio Api and TUNAJs, an audio effects library, Beatdriver uses modular routing system to create a mixer with 4 different effects: Chorus, Phaser, Tremolo and Moog. As a user, you can also browse a Discover page showcasing all saved creations, complete with visual previews of board states."
+      p1={
+        <p>
+          Groove Records is an RESTful e-commerce website using {""}
+          <span className="font-bold">
+            React, PostgreSQL, Node.Js, Express and Material UI
+          </span>
+          . Visitors can look through the product inventory, filter products by
+          searching and add them to their cart.
+        </p>
+      }
+      p2="Visitors can also create an
+          account to edit and finalize their orders through token-based
+          authentication and password-hashing via JSON-web-token. Administrator accounts can update product inventory and access user data though gatekeeping middleware."
       github="https://github.com/vinylShopFSA/vinylGraceShopper"
     />
   );
