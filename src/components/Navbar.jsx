@@ -4,7 +4,8 @@ import { useRouter } from "next/router";
 import React, { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose, AiOutlineMail } from "react-icons/ai";
 import logo from "../../public/assets/eyeduhlogo.png";
-import head from "../../public/assets/headlogo.png";
+// import head from "../../public/assets/headlogo.png";
+import head from "../../public/assets/face.png";
 
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 const Navbar = () => {
