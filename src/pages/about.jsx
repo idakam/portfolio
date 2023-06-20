@@ -10,13 +10,11 @@ const About = () => {
       <h1 className="py-4 uppercase">Eyeduh</h1>
       <div className="flex flex-col">
         <p className="py-2 tracking-widest">
-          Ida Kamali is a full-stack software engineer with a passion for
-          collaborating on and creating user-centered programs to enhance
-          everyday life. I am in pursuit of experiences centered around design,
-          community, and computational exploration, and am excited to
-          participate in environments where I can work on innovative projects
-          and cultivate my skills. In between coding, I work as a freelance
-          designer.
+          Ida Kamali is a full-stack software engineer and artist with a passion
+          for creating immersive and visually engaging applications. They are in
+          pursuit of experiences centered around web design, community, and
+          computational experimentation. When not coding, they are either
+          listening to music, baking bread or painting.
         </p>
 
         <div className="w-auto h-auto m-auto rounded-xl py-4 hover:scale-105 ease-in duration-300 opacity-80">

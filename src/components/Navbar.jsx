@@ -20,7 +20,7 @@ const Navbar = () => {
     <>
       <nav className="hidden md:flex w-full h-screen overflow-scroll ">
         <div className="flex h-screen flex-col w-full py-4 px-4">
-          <div className="flex justify-center  m-auto hover:scale-105">
+          <div className="px-5 flex justify-center m-auto hover:scale-105">
             <Link className="" href="/">
               <Image src={head} alt="/" />
             </Link>
@@ -149,7 +149,7 @@ const Navbar = () => {
             : "hidden"
         }
       >
-        <div className="flex h-screen flex-col w-full py-4 px-4 overflow-auto text-lg">
+        <div className="flex flex-col h-screen py-4 px-4 overflow-auto text-lg">
           <div onClick={handleNav} className="fixed right-3 cursor-pointer">
             {""}
             <AiOutlineClose size={40} />
@@ -160,7 +160,7 @@ const Navbar = () => {
             </Link>
           </div>
 
-          <div className="flex text-5xl flex-col h-auto w-auto px-[5%]">
+          <div className="flex-1 text-5xl flex-col h-auto w-auto px-[5%]">
             <ul>
               <Link href="/about">
                 <li

@@ -7,6 +7,7 @@ const GltfModel = ({ modelPath, scale = 10, position = [0, 0, 0] }) => {
   const ref = useRef();
   const gltf = useLoader(GLTFLoader, modelPath);
   const [hovered, hover] = useState(false);
+  console.log(gltf, "gltf");
   return (
     <>
       <primitive
