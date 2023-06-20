@@ -76,6 +76,17 @@ const Navbar = () => {
                     3D Pose Detection
                   </li>
                 </Link>
+                <Link href="/projects/viewfrommywindow">
+                  <li
+                    className={
+                      router.pathname == "/projects/viewfrommywindow"
+                        ? "ml- uppercase text-red-700 font-bold"
+                        : "ml- uppercase hover:text-red-700"
+                    }
+                  >
+                    View From My Window
+                  </li>
+                </Link>
               </ul>
               <ul className="ml- uppercase py-2">
                 <span className="md:text-xs lg:text-sm xl:text-base 2xl:text-lg">

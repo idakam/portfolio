@@ -13,7 +13,7 @@ const Project = ({ type, title, projectImg, p1, p2, deployed, github }) => {
           <h1 className="py-4 uppercase">{title}</h1>
           <div className="flex flex-col">
             <div className="py-2  tracking-widest">{p1}</div>
-            <div className="relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl group opacity-80 hover:bg-gradient-to-r from-[#0b316e] to-[#3d69e4]">
+            <div className="relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl group opacity-85 hover:bg-gradient-to-r from-[#0b316e] to-[#3d69e4]">
               <Image
                 className="rounded-xl group-hover:opacity-10"
                 src={projectImg}

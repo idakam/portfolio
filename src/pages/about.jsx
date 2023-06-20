@@ -12,8 +12,8 @@ const About = () => {
         <p className="py-2 tracking-widest">
           Ida Kamali is a full-stack software engineer and artist with a passion
           for creating immersive and visually engaging applications. They are in
-          pursuit of experiences centered around web design, community, and
-          computational experimentation. When not coding, they are either
+          pursuit of experiences centered around music, web design, community,
+          and computational experimentation. When not coding, they are either
           listening to music, baking bread or painting.
         </p>
 
