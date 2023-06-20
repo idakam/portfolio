@@ -161,12 +161,15 @@ const Navbar = () => {
         }
       >
         <div className="flex flex-col h-screen py-4 px-4 overflow-auto text-lg">
-          <div onClick={handleNav} className="fixed right-3 cursor-pointer">
+          <div
+            onClick={handleNav}
+            className="fixed right-3 cursor-pointer z-40"
+          >
             {""}
             <AiOutlineClose size={40} />
           </div>
           <div className="flex justify-center w-auto h-auto m-auto hover:scale-105">
-            <Link className="" href="/">
+            <Link onClick={handleNav} className="" href="/">
               <Image src={head} alt="/" />
             </Link>
           </div>
@@ -199,24 +202,64 @@ const Navbar = () => {
                     Beatdriver
                   </li>
                 </Link>
-                <Link href="/projects/vinylshop">
-                  <li className=" uppercase hover:text-red-700">
+                <Link href="/projects/grooverecords">
+                  <li
+                    onClick={handleNav}
+                    className={
+                      router.pathname == "/projects/grooverecords"
+                        ? "ml- uppercase text-red-700 font-bold"
+                        : "ml- uppercase hover:text-red-700"
+                    }
+                  >
                     Groove Records
                   </li>
                 </Link>
                 <Link href="/projects/posedetection">
-                  <li className="  uppercase hover:text-red-700 ">
+                  <li
+                    onClick={handleNav}
+                    className={
+                      router.pathname == "/projects/posedetection"
+                        ? "ml- uppercase text-red-700 font-bold"
+                        : "ml- uppercase hover:text-red-700"
+                    }
+                  >
                     3D Pose Detection
+                  </li>
+                </Link>
+                <Link onClick={handleNav} href="/projects/viewfrommywindow">
+                  <li
+                    className={
+                      router.pathname == "/projects/viewfrommywindow"
+                        ? "ml- uppercase text-red-700 font-bold"
+                        : "ml- uppercase hover:text-red-700"
+                    }
+                  >
+                    View From My Window
                   </li>
                 </Link>
               </ul>
               <ul className="ml- uppercase py-2">
                 <span className="text-3xl">MISC</span>
                 <Link href="/misc/painting">
-                  <li className=" uppercase hover:text-red-700">Painting</li>
+                  <li
+                    onClick={handleNav}
+                    className={
+                      router.pathname == "/misc/painting"
+                        ? "ml- uppercase text-red-700 font-bold"
+                        : "ml- uppercase hover:text-red-700"
+                    }
+                  >
+                    Painting
+                  </li>
                 </Link>
-                <Link href="/misc/design">
-                  <li className=" uppercase hover:text-red-700">
+                <Link onClick={handleNav} href="/misc/design">
+                  <li
+                    className={
+                      router.pathname == "/misc/design"
+                        ? "ml- uppercase text-red-700 font-bold"
+                        : "ml- uppercase hover:text-red-700"
+                    }
+                  >
                     Video + Design
                   </li>
                 </Link>
