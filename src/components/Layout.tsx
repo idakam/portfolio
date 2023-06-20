@@ -3,7 +3,7 @@ import Navbar from "./Navbar";
 
 const Layout = ({ children }: PropsWithChildren) => {
   return (
-    <div className="flex flex-col md:flex-row overflow-auto h-screen">
+    <div className="flex flex-col md:flex-row overflow-hidden h-screen">
       <div className="w-full bg-opacity-30 md:w-[30%]">
         <Navbar />
       </div>
