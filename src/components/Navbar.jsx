@@ -168,7 +168,7 @@ const Navbar = () => {
             {""}
             <AiOutlineClose size={40} />
           </div>
-          <div className="flex justify-center w-auto h-auto m-auto hover:scale-105">
+          <div className="flex justify-center w-auto h-auto m-auto">
             <Link onClick={handleNav} className="" href="/">
               <Image src={head} alt="/" />
             </Link>
@@ -208,7 +208,7 @@ const Navbar = () => {
                     className={
                       router.pathname == "/projects/grooverecords"
                         ? "ml- uppercase text-red-700 font-bold"
-                        : "ml- uppercase hover:text-red-700"
+                        : "ml- uppercase"
                     }
                   >
                     Groove Records
@@ -220,7 +220,7 @@ const Navbar = () => {
                     className={
                       router.pathname == "/projects/posedetection"
                         ? "ml- uppercase text-red-700 font-bold"
-                        : "ml- uppercase hover:text-red-700"
+                        : "ml- uppercase"
                     }
                   >
                     3D Pose Detection
@@ -231,7 +231,7 @@ const Navbar = () => {
                     className={
                       router.pathname == "/projects/viewfrommywindow"
                         ? "ml- uppercase text-red-700 font-bold"
-                        : "ml- uppercase hover:text-red-700"
+                        : "ml- uppercase"
                     }
                   >
                     View From My Window
@@ -246,7 +246,7 @@ const Navbar = () => {
                     className={
                       router.pathname == "/misc/painting"
                         ? "ml- uppercase text-red-700 font-bold"
-                        : "ml- uppercase hover:text-red-700"
+                        : "ml- uppercase"
                     }
                   >
                     Painting
@@ -257,7 +257,7 @@ const Navbar = () => {
                     className={
                       router.pathname == "/misc/design"
                         ? "ml- uppercase text-red-700 font-bold"
-                        : "ml- uppercase hover:text-red-700"
+                        : "ml- uppercase"
                     }
                   >
                     Video + Design
