@@ -7,10 +7,7 @@ const Project = ({ type, title, projectImg, p1, p2, deployed, github }) => {
     <div id="about" className="lg:mx-[10%] 2xl:mx-[15%]">
       <div className="gap-8">
         <div className="col-span-2">
-          <p className="uppercase text-xl tracking-widest text-red-700 ">
-            {type}
-          </p>
-          <h1 className="py-4 uppercase">{title}</h1>
+          <h1 className="uppercase">{title}</h1>
           <div className="flex flex-col">
             <div className="py-2  tracking-widest">{p1}</div>
             <div className="relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl group opacity-85 hover:bg-gradient-to-r from-[#0b316e] to-[#3d69e4]">
