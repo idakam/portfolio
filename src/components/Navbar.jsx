@@ -6,6 +6,7 @@ import { AiOutlineMenu, AiOutlineClose, AiOutlineMail } from "react-icons/ai";
 import head from "../../public/assets/face.png";
 
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+
 const Navbar = () => {
   const router = useRouter();
 
@@ -13,6 +14,35 @@ const Navbar = () => {
   const handleNav = () => {
     setMenuOpen(!menuOpen);
   };
+
+  const listOfLinks = [
+    ["About", "/about"],
+    ["BeatDriver", "/projects/beatdriver"],
+    ["Groove Records", "/projects/grooverecords"],
+    ["3D Pose Detection", "/projects/posedetection"],
+    ["View From My Window", "/projects/viewfrommywindow"],
+  ];
+
+  const listOfButtons = [
+    [
+      <>
+        <FaLinkedinIn />
+      </>,
+      "https://www.linkedin.com/in/ida-kam/",
+    ],
+    [
+      <>
+        <FaGithub />
+      </>,
+      "https://github.com/idakam",
+    ],
+    [
+      <>
+        <FaGithub />
+      </>,
+      "mailto:ida.kamali10@gmail.com",
+    ],
+  ];
 
   const updateTime = () => {
     let now = new Date();
@@ -36,194 +66,96 @@ const Navbar = () => {
 
   updateTime();
   return (
-    // <div className="">
-    //   <nav className="flex bg-white bg-opacity-30 p-2">
-    //     <ul className="flex flex-col uppercase py-2">
-    //       <Link href="/about">
-    //         <li
-    //           className={
-    //             router.pathname == "/about"
-    //               ? "uppercase text-red-700 font-bold"
-    //               : "uppercase hover:text-red-700"
-    //           }
-    //         >
-    //           About
-    //         </li>
-    //       </Link>
-    //       <Link href="/projects/beatdriver">
-    //         <li
-    //           className={
-    //             router.pathname == "/projects/beatdriver"
-    //               ? "uppercase text-red-700 font-bold"
-    //               : "uppercase hover:text-red-700"
-    //           }
-    //         >
-    //           Beatdriver
-    //         </li>
-    //       </Link>
-    //       <Link href="/projects/grooverecords">
-    //         <li
-    //           className={
-    //             router.pathname == "/projects/grooverecords"
-    //               ? "uppercase text-red-700 font-bold"
-    //               : "uppercase hover:text-red-700"
-    //           }
-    //         >
-    //           Groove Records
-    //         </li>
-    //       </Link>
-    //       <Link href="/projects/posedetection">
-    //         <li
-    //           className={
-    //             router.pathname == "/projects/posedetection"
-    //               ? "uppercase text-red-700 font-bold"
-    //               : "uppercase hover:text-red-700"
-    //           }
-    //         >
-    //           3D Pose Detection
-    //         </li>
-    //       </Link>
-    //       <Link href="/projects/viewfrommywindow">
-    //         <li
-    //           className={
-    //             router.pathname == "/projects/viewfrommywindow"
-    //               ? "uppercase text-red-700 font-bold"
-    //               : "uppercase hover:text-red-700"
-    //           }
-    //         >
-    //           View From My Window
-    //         </li>
-    //       </Link>
-    //     </ul>
-    // <div className="flex justify-around">
-    //   <div className="rounded-full shadow-xl shadow-gray-400 p-2 cursor-pointer hover:scale-105 ease-in duration-300">
-    //     <a
-    //       target="_blank"
-    //       href="https://www.linkedin.com/in/ida-kam/"
-    //       rel="noopener noreferrer"
-    //     >
-    //       <FaLinkedinIn />
-    //     </a>
-    //   </div>
-    //   <div className="rounded-full shadow-xl shadow-gray-400 p-2 cursor-pointer hover:scale-105 ease-in duration-300">
-    //     <a
-    //       target="_blank"
-    //       href="https://github.com/idakam"
-    //       rel="noopener noreferrer"
-    //     >
-    //       <FaGithub />
-    //     </a>
-    //   </div>
-    //   <div className="rounded-full shadow-xl shadow-gray-400 p-2 cursor-pointer hover:scale-105 ease-in duration-300">
-    //     <a
-    //       target="_blank"
-    //       href="mailto:ida.kamali10@gmail.com"
-    //       rel="noopener noreferrer"
-    //     >
-    //       <AiOutlineMail />
-    //     </a>
-    //   </div>
-    // </div>
-    //   </nav>
-    // <div className="bg-white bg-opacity-30 p-2">
-    //   This website was born <br></br>
-    //   {updateTime()} days ago.
-    // </div>
-    // </div>
-    <div className="flex flex-col text-xs justify-between">
-      <nav className="bg-white bg-opacity-30 p-2 shadow-2xl">
-        <ul className="flex flex-col uppercase py-2">
-          <Link href="/about">
-            <li
-              className={
-                router.pathname == "/about"
-                  ? "uppercase text-red-700 font-bold"
-                  : "uppercase hover:text-red-700"
-              }
-            >
-              About
-            </li>
-          </Link>
-          <Link href="/projects/beatdriver">
-            <li
-              className={
-                router.pathname == "/projects/beatdriver"
-                  ? "uppercase text-red-700 font-bold"
-                  : "uppercase hover:text-red-700"
-              }
-            >
-              Beatdriver
-            </li>
-          </Link>
-          <Link href="/projects/grooverecords">
-            <li
-              className={
-                router.pathname == "/projects/grooverecords"
-                  ? "uppercase text-red-700 font-bold"
-                  : "uppercase hover:text-red-700"
-              }
-            >
-              Groove Records
-            </li>
-          </Link>
-          <Link href="/projects/posedetection">
-            <li
-              className={
-                router.pathname == "/projects/posedetection"
-                  ? "uppercase text-red-700 font-bold"
-                  : "uppercase hover:text-red-700"
-              }
-            >
-              3D Pose Detection
-            </li>
-          </Link>
-          <Link href="/projects/viewfrommywindow">
-            <li
-              className={
-                router.pathname == "/projects/viewfrommywindow"
-                  ? "uppercase text-red-700 font-bold"
-                  : "uppercase hover:text-red-700"
-              }
-            >
-              View From My Window
-            </li>
-          </Link>
-        </ul>
-        <div className="flex justify-around">
-          <div className="rounded-full shadow-xl shadow-gray-400 p-2 cursor-pointer hover:scale-105 ease-in duration-300">
-            <a
-              target="_blank"
-              href="https://www.linkedin.com/in/ida-kam/"
-              rel="noopener noreferrer"
-            >
-              <FaLinkedinIn />
-            </a>
+    <>
+      <div className="hidden md:flex flex-col text-xs justify-between">
+        <nav className="bg-white bg-opacity-30 p-2 shadow-2xl">
+          <ul className="flex flex-col uppercase py-2">
+            {listOfLinks.map(function (link, index) {
+              return (
+                <Link href={link[1]} key={index}>
+                  <li
+                    className={
+                      router.pathname == link[1]
+                        ? "uppercase text-red-700 font-bold"
+                        : "uppercase hover:text-red-700"
+                    }
+                  >
+                    {link[0]}
+                  </li>
+                </Link>
+              );
+            })}
+          </ul>
+          <div className="flex justify-around">
+            {listOfButtons.map(function (button, index) {
+              return (
+                <div
+                  key={index}
+                  className="rounded-full shadow-xl shadow-gray-400 p-2 cursor-pointer hover:scale-105 ease-in duration-300"
+                >
+                  <a target="_blank" href={button[1]} rel="noopener noreferrer">
+                    {button[0]}
+                  </a>
+                </div>
+              );
+            })}
           </div>
-          <div className="rounded-full shadow-xl shadow-gray-400 p-2 cursor-pointer hover:scale-105 ease-in duration-300">
-            <a
-              target="_blank"
-              href="https://github.com/idakam"
-              rel="noopener noreferrer"
-            >
-              <FaGithub />
-            </a>
+        </nav>
+        <div className="bg-white bg-opacity-30 p-2 shadow-xl">
+          This website was born <br></br>
+          {updateTime()} days ago.
+        </div>
+      </div>
+
+      <div
+        onClick={handleNav}
+        className="fixed -m-[5%] md:hidden cursor-pointer w-full"
+      >
+        {" "}
+        <AiOutlineMenu size={40} />
+      </div>
+      <div
+        className={
+          menuOpen
+            ? "fixed flex-col left-0 top-0 w-full md:hidden h-screen ease-in duration-500 z-40 bg-cover bg-[url('../../public/assets/background.png')]"
+            : "hidden"
+        }
+      >
+        <div className="flex flex-col h-screen py-4 px-4 text-lg">
+          <div
+            onClick={handleNav}
+            className="fixed right-3 cursor-pointer z-40"
+          >
+            {""}
+            <AiOutlineClose size={40} />
           </div>
-          <div className="rounded-full shadow-xl shadow-gray-400 p-2 cursor-pointer hover:scale-105 ease-in duration-300">
-            <a
-              target="_blank"
-              href="mailto:ida.kamali10@gmail.com"
-              rel="noopener noreferrer"
-            >
-              <AiOutlineMail />
-            </a>
+          <div className="bg-white bg-opacity-30 p-2 shadow-2xl">
+            <ul className="flex flex-col uppercase py-2">
+              {listOfLinks.map(function (link, index) {
+                return (
+                  <Link href={link[1]} key={index}>
+                    <li
+                      onClick={handleNav}
+                      className={
+                        router.pathname == link[1]
+                          ? "uppercase text-red-700 font-bold"
+                          : "uppercase hover:text-red-700"
+                      }
+                    >
+                      {link[0]}
+                    </li>
+                  </Link>
+                );
+              })}
+            </ul>
+          </div>
+          <div className="bg-white bg-opacity-30 p-2 shadow-xl">
+            This website was born <br></br>
+            {updateTime()} days ago.
           </div>
         </div>
-      </nav>
-      <div className="bg-white bg-opacity-30 p-2 shadow-xl">
-        This website was born <br></br>
-        {updateTime()} days ago.
       </div>
-    </div>
+    </>
   );
 };
 
