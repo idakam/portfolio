@@ -106,7 +106,6 @@ const Navbar = () => {
           {updateTime()} days ago.
         </div>
       </div>
-
       <div
         onClick={handleNav}
         className="fixed -m-[5%] md:hidden cursor-pointer w-full"
@@ -117,11 +116,11 @@ const Navbar = () => {
       <div
         className={
           menuOpen
-            ? "fixed flex-col left-0 top-0 w-full md:hidden h-screen ease-in duration-500 z-40 bg-cover bg-[url('../../public/assets/background.png')]"
+            ? "fixed flex-col left-0 top-0 w-full md:hidden h-full ease-in duration-500 z-40 bg-cover bg-[url('../../public/assets/background.png')]"
             : "hidden"
         }
       >
-        <div className="flex flex-col h-screen py-4 px-4 text-lg">
+        <div className="flex flex-col h-full py-4 px-4 text-lg justify-between">
           <div
             onClick={handleNav}
             className="fixed right-3 cursor-pointer z-40"
@@ -129,7 +128,7 @@ const Navbar = () => {
             {""}
             <AiOutlineClose size={40} />
           </div>
-          <div className="bg-white bg-opacity-30 p-2 shadow-2xl">
+          <div className="bg-white bg-opacity-30 p-2 shadow-2xl text-3xl">
             <ul className="flex flex-col uppercase py-2">
               {listOfLinks.map(function (link, index) {
                 return (
@@ -138,8 +137,8 @@ const Navbar = () => {
                       onClick={handleNav}
                       className={
                         router.pathname == link[1]
-                          ? "uppercase text-red-700 font-bold"
-                          : "uppercase hover:text-red-700"
+                          ? "uppercase text-red-700 font-bold py-2"
+                          : "uppercase hover:text-red-700 py-2"
                       }
                     >
                       {link[0]}
@@ -148,6 +147,24 @@ const Navbar = () => {
                 );
               })}
             </ul>
+            <div className="flex justify-around">
+              {listOfButtons.map(function (button, index) {
+                return (
+                  <div
+                    key={index}
+                    className="rounded-full shadow-xl shadow-gray-400 p-2 cursor-pointer hover:scale-105 ease-in duration-300"
+                  >
+                    <a
+                      target="_blank"
+                      href={button[1]}
+                      rel="noopener noreferrer"
+                    >
+                      {button[0]}
+                    </a>
+                  </div>
+                );
+              })}
+            </div>
           </div>
           <div className="bg-white bg-opacity-30 p-2 shadow-xl">
             This website was born <br></br>
