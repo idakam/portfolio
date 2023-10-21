@@ -10,23 +10,13 @@ const ModelViewer = dynamic(import("../components/Three/ModelViewer"), {
 
 const Main = () => {
   return (
-    <div className="flex flex-col  md:flex-row h-full">
+    <div className="flex flex-col items-center">
       {/* <ModelViewer modelPath={"/assets/faceblend.glb"} /> */}
-      <div className="flex justify-center md:flex-none">
+      <div className="flex justify-center">
         <Image className="h-full w-auto" src={head} alt="/" />
       </div>
       <div className="bg-white bg-opacity-30 p-2 overflow-auto shadow-xl">
-        asdklfjsalkfjh asdkjfhasld sjkdfhsafmnsd ksjdkhfsakjfnsadkjhsdkjfh
-        askjhflaskjhfl askjhf skjdhfkjsdfksaf hfmhfjsdhfls dsj fs fhs hajhsf
-        kajsdh a asdklfjsalkfjh asdkjfhasld sjkdfhsafmnsd
-        ksjdkhfsakjfnsadkjhsdkjfh askjhflaskjhfl askjhf skjdhfkjsdfksaf
-        hfmhfjsdhfls dsj fs fhs hajhsf kajsdh a asdklfjsalkfjh asdkjfhasld
-        sjkdfhsafmnsd ksjdkhfsakjfnsadkjhsdkjfh askjhflaskjhfl askjhf
-        skjdhfkjsdfksaf hfmhfjsdhfls dsj fs fhs hajhsf kajsdh a sdfksaf
-        hfmhfjsdhfls dsj fs fhs hajhsf kajsdh avsdfksaf hfmhfjsdhfls dsj fs fhs
-        hajhsf kajsdh asdfksaf hfmhfjsdhfls dsj fs fhs hajhsf kajsdh asdfksaf
-        hfmhfjsdhfls dsj fs fhs hajhsf kajsdh asdfksaf hfmhfjsdhfls dsj fs fhs
-        hajhsf kajsdh a
+        Be back shortly...
       </div>
 
       {/* <div className="hidden md:fixed mr-4 text-justify items-center justify-center "></div> */}

@@ -17,16 +17,9 @@ const Layout = ({ children }: PropsWithChildren) => {
     //   <div className="bg-white bg-opacity-30"></div>
     //   <div className="bg-black bg-opacity-30 col-span-2">hi</div>
     // </div>
-    <div className="fixed m-[10%] h-full">
-      <div className="flex flex-row md:h-[50%]">
-        <div className="md:flex md:basis-1/6">
-          <Navbar />
-        </div>
-        <div className="flex md:flex-row md:basis-5/6">
-          <Main />
-        </div>
-
-        {/* <div>{children}</div> */}
+    <div className="flex flex-row justify-center items-center h-full ">
+      <div className="m-auto">
+        <Main />
       </div>
     </div>
   );
