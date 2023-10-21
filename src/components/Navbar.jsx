@@ -67,7 +67,7 @@ const Navbar = () => {
   updateTime();
   return (
     <>
-      <div className="hidden md:flex flex-col text-xs justify-between">
+      <div className="hidden md:flex h-full flex-col text-xs justify-between">
         <nav className="bg-white bg-opacity-30 p-2 shadow-2xl">
           <ul className="flex flex-col uppercase py-2">
             {listOfLinks.map(function (link, index) {
