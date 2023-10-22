@@ -22,8 +22,8 @@ const Layout = ({ children }: PropsWithChildren) => {
         <div className="md:flex md:basis-1/6">
           <Navbar />
         </div>
-        <div className="flex md:flex-row md:basis-5/6">
-          <Main />
+        <div className="flex md:ml-[5%] md:flex-row md:basis-5/6 h-full">
+          <div>{children}</div>
         </div>
 
         {/* <div>{children}</div> */}
