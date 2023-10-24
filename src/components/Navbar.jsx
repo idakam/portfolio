@@ -64,7 +64,71 @@ const Navbar = () => {
     return dayDifference;
   };
 
-  updateTime();
+  // const lastUpdate = () => {
+  //   let now = new Date();
+  //   const update = new Date("Oct 24, 2023 14:25:00");
+
+  //   // To calculate the time difference of two dates
+  //   let timeDifference = now.getTime() - birth.getTime();
+
+  //   // To calculate the no. of days between two dates
+  //   let dayDifference = Math.trunc(timeDifference / (1000 * 3600 * 24));
+  // };
+
+  const lastUpdate = () => {
+    const now = new Date();
+    const update = new Date("Oct 24, 2023 14:25:00");
+
+    // Calculate the time difference in milliseconds
+    const timeDifference = now.getTime() - update.getTime();
+
+    // Calculate the days, hours, minutes, and seconds
+    const days = Math.floor(timeDifference / (1000 * 3600 * 24));
+    const hours = Math.floor(
+      (timeDifference % (1000 * 3600 * 24)) / (1000 * 3600)
+    );
+    const minutes = Math.floor((timeDifference % (1000 * 3600)) / (1000 * 60));
+    const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+
+    // Initialize an array to store the time parts
+    const timeParts = [];
+
+    if (days > 0) {
+      timeParts.push(`${days} day${days === 1 ? "" : "s"}`);
+    }
+
+    if (hours > 0) {
+      timeParts.push(`${hours} hour${hours === 1 ? "" : "s"}`);
+    }
+
+    if (minutes > 0) {
+      timeParts.push(`${minutes} minute${minutes === 1 ? "" : "s"}`);
+    }
+
+    if (seconds > 0) {
+      timeParts.push(`${seconds} second${seconds === 1 ? "" : "s"}`);
+    }
+
+    // Construct the sentence
+    let sentence = "Last updated: ";
+
+    if (timeParts.length === 1) {
+      sentence += timeParts[0] + " ago.";
+    } else {
+      sentence += timeParts.slice(0, -1).join(", ");
+      if (timeParts.length > 2) {
+        sentence += ",";
+      }
+      sentence += ` and ${timeParts[timeParts.length - 1]} ago.`;
+    }
+
+    return sentence;
+  };
+
+  // Example usage
+  const timeSinceLastUpdate = lastUpdate();
+  console.log(timeSinceLastUpdate);
+
   return (
     <>
       <div className="hidden md:flex h-full flex-col text-xs justify-between">
@@ -102,8 +166,7 @@ const Navbar = () => {
           </div>
         </nav>
         <div className="bg-white bg-opacity-30 p-2 shadow-xl">
-          This website was born <br></br>
-          {updateTime()} days ago.
+          {lastUpdate()}
         </div>
       </div>
       <div
