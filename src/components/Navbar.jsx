@@ -108,7 +108,7 @@ const Navbar = () => {
       </div>
       <div
         onClick={handleNav}
-        className="fixed -m-[5%] md:hidden cursor-pointer w-full"
+        className="fixed top-2 left-2 md:hidden cursor-pointer w-full"
       >
         {" "}
         <AiOutlineMenu size={40} />
