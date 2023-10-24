@@ -16,7 +16,7 @@ const Project = ({
     <div className="flex flex-col md:flex-row h-full">
       <div className="flex flex-col md:mr-[5%] md:justify-center md:w-1/2">
         <Image
-          className="object-contain md:max-h-full min-w-0 pb-3 "
+          className="object-contain md:max-h-full min-w-0 pb-3 md:pb-0 "
           src={projectImg}
           alt="/"
         />
