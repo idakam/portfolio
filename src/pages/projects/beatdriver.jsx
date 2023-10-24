@@ -16,7 +16,11 @@ const Beatdriver = () => {
           </span>{" "}
           that can be used right in the browser. Users can create beats with
           built-in sounds and effects, upload their own samples, and save and
-          record their project to share with anyone!
+          record their project to share with anyone! Using Web Audio Api and
+          TUNAJs, an audio effects library, Beatdriver uses modular routing
+          system to create a mixer with 4 different effects: Chorus, Phaser,
+          Tremolo and Moog. User's can save their creations and browse through
+          the Discover page showcasing other user's saved creations.
         </p>
       }
       p2="Using Web Audio Api and TUNAJs, an audio effects library, Beatdriver uses modular routing system to create a mixer with 4 different effects: Chorus, Phaser, Tremolo and Moog. User's can save their creations and browse through the Discover page showcasing other user's saved creations."
