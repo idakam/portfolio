@@ -19,7 +19,15 @@ const Beatdriver = () => {
           record their project to share with anyone!
         </p>
       }
-      p2="Using Web Audio Api and TUNAJs, an audio effects library, Beatdriver uses modular routing system to create a mixer with 4 different effects: Chorus, Phaser, Tremolo and Moog. User's can save their creations and browse through the Discover page showcasing other user's saved creations."
+      p2={
+        <p>
+          Using Web Audio Api and TUNAJs, an audio effects library, Beatdriver
+          uses modular routing system to create a mixer with 4 different
+          effects: Chorus, Phaser, Tremolo and Moog. User`&apos;`s can save
+          their creations and browse through the Discover page showcasing other
+          user`&apos;`s saved creations.
+        </p>
+      }
       deployed="https://beatdriver.vercel.app"
       github="https://github.com/FC-TEAM-VISA/beatdriver"
     />

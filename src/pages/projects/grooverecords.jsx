@@ -20,9 +20,14 @@ const VinylShop = () => {
           searching and add them to their cart.
         </p>
       }
-      p2="Visitors can also create an
-          account to edit and finalize their orders through token-based
-          authentication and password-hashing via JSON-web-token. Administrator accounts can update product inventory and access user data though gatekeeping middleware."
+      p2={
+        <p>
+          Visitors can also create an account to edit and finalize their orders
+          through token-based authentication and password-hashing via
+          JSON-web-token. Administrator accounts can update product inventory
+          and access user data though gatekeeping middleware.
+        </p>
+      }
       github="https://github.com/vinylShopFSA/vinylGraceShopper"
     />
   );
