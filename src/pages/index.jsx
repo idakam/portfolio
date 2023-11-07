@@ -2,7 +2,7 @@ import Image from "next/image";
 import Head from "next/head";
 import Beatdriver from "./projects/beatdriver";
 import head from "../../public/assets/face.png";
-import Project from "@/components/Project";
+import Project from "../components/Project";
 // import logo from "../../public/assets/logo.png"
 
 export default function Home() {
@@ -14,6 +14,8 @@ export default function Home() {
       </Head>
 
       <Project
+        type="Home"
+        title="Home"
         projectImg={head}
         p1={
           <p className="">
