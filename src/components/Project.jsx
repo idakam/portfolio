@@ -19,6 +19,7 @@ const Project = ({
           className="object-contain  md:max-h-full min-w-0 pb-3 md:pb-0"
           src={projectImg}
           alt="/"
+          priority="true"
         />
       </div>
       <div className="bg-white bg-opacity-30 p-2 overflow-auto shadow-xl md:w-1/2 h-1/2s">
