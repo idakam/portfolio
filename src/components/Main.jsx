@@ -10,6 +10,7 @@ const ModelViewer = dynamic(import("../components/Three/ModelViewer"), {
 
 const Main = () => {
   return (
+
     <div className="flex flex-col items-center">
       {/* <ModelViewer modelPath={"/assets/faceblend.glb"} /> */}
       <div className="flex justify-center">
@@ -18,8 +19,6 @@ const Main = () => {
       <div className="bg-white bg-opacity-30 p-2 overflow-auto shadow-xl">
         Be back shortly...
       </div>
-
-      {/* <div className="hidden md:fixed mr-4 text-justify items-center justify-center "></div> */}
     </div>
   );
 };
