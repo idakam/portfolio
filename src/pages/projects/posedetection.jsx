@@ -12,7 +12,7 @@ const PoseDetection = () => {
       projectImg={projectImg}
       p1={
         <p>
-          This project was created to explore the realm of human-computer
+          An experimentation and exploration within the realm of human-computer
           interaction. Using{" "}
           <span className="font-bold">
             Three.Js, Tensorflow.Js, and BlazePose, p5.JS

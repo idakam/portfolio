@@ -14,14 +14,14 @@ const Project = ({
 }) => {
   return (
     <div className="flex flex-col md:flex-row h-full">
-      <div className="flex flex-col md:mr-[5%] md:justify-center md:w-1/2">
+      <div className="flex flex-col md:mr-[5%] justify-center md:w-1/2">
         <Image
-          className="object-contain md:max-h-full min-w-0 pb-3 md:pb-0 "
+          className="object-contain  md:max-h-full min-w-0 pb-3 md:pb-0"
           src={projectImg}
           alt="/"
         />
       </div>
-      <div className=" bg-white bg-opacity-30 p-2 overflow-auto shadow-xl md:w-1/2">
+      <div className="bg-white bg-opacity-30 p-2 overflow-auto shadow-xl md:w-1/2 h-1/2s">
         {p1}
       </div>
     </div>
