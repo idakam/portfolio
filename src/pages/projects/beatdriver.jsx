@@ -1,6 +1,6 @@
 import React from "react";
 import Project from "../../components/Project";
-import projectImg from "../../../public/assets/projects/beatdriver.gif";
+import projectImg from "../../../public/assets/projects/beatdriver.png";
 
 const Beatdriver = () => {
   return (
