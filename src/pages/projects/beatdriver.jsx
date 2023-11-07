@@ -23,9 +23,9 @@ const Beatdriver = () => {
         <p>
           Using Web Audio Api and TUNAJs, an audio effects library, Beatdriver
           uses modular routing system to create a mixer with 4 different
-          effects: Chorus, Phaser, Tremolo and Moog. User's can save their
-          creations and browse through the Discover page showcasing other user's
-          saved creations.
+          effects: Chorus, Phaser, Tremolo and Moog. User`&apos;`s can save
+          their creations and browse through the Discover page showcasing other
+          user`&apos;`s saved creations.
         </p>
       }
       deployed="https://beatdriver.vercel.app"
