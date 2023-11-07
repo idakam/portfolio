@@ -20,6 +20,7 @@ const Project = ({
           src={projectImg}
           alt="/"
           priority="true"
+          sizes="100vw"
         />
       </div>
       <div className="bg-white bg-opacity-30 p-2 overflow-auto shadow-xl md:w-1/2 h-1/2s">
