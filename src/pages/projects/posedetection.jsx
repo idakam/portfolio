@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Project from "../../components/Project";
-import projectImg from "../../../public/assets/projects/interactive.gif";
+import projectImg from "../../../public/assets/projects/interactive.png";
 
 const PoseDetection = () => {
   return (
