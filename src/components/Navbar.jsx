@@ -16,7 +16,7 @@ const Navbar = () => {
   };
 
   const listOfLinks = [
-    ["About", "/about"],
+    // ["About", "/about"],
     ["BeatDriver", "/projects/beatdriver"],
     ["Groove Records", "/projects/grooverecords"],
     ["3D Pose Detection", "/projects/posedetection"],
@@ -38,7 +38,7 @@ const Navbar = () => {
     ],
     [
       <>
-        <FaGithub />
+        <AiOutlineMail />
       </>,
       "mailto:ida.kamali10@gmail.com",
     ],
@@ -77,7 +77,7 @@ const Navbar = () => {
 
   const lastUpdate = () => {
     const now = new Date();
-    const update = new Date("Oct 24, 2023 14:25:00");
+    const update = new Date("Oct 24, 2023 15:24:00");
 
     // Calculate the time difference in milliseconds
     const timeDifference = now.getTime() - update.getTime();
@@ -134,6 +134,18 @@ const Navbar = () => {
       <div className="hidden md:flex h-full flex-col text-xs justify-between">
         <nav className="bg-white bg-opacity-30 p-2 shadow-2xl">
           <ul className="flex flex-col uppercase py-2">
+            <Link href="/">
+              <li
+                className={
+                  router.pathname == "/"
+                    ? "uppercase text-red-700 font-bold"
+                    : "uppercase hover:text-red-700"
+                }
+              >
+                Home
+              </li>
+            </Link>
+            <br></br>
             {listOfLinks.map(function (link, index) {
               return (
                 <Link href={link[1]} key={index}>
@@ -193,6 +205,19 @@ const Navbar = () => {
           </div>
           <div className="bg-white bg-opacity-30 p-2 shadow-2xl text-3xl">
             <ul className="flex flex-col uppercase py-2">
+              <Link href="/">
+                <li
+                  onClick={handleNav}
+                  className={
+                    router.pathname == "/"
+                      ? "uppercase text-red-700 font-bold"
+                      : "uppercase hover:text-red-700"
+                  }
+                >
+                  Home
+                </li>
+              </Link>
+              <br></br>
               {listOfLinks.map(function (link, index) {
                 return (
                   <Link href={link[1]} key={index}>
@@ -230,8 +255,7 @@ const Navbar = () => {
             </div>
           </div>
           <div className="bg-white bg-opacity-30 p-2 shadow-xl">
-            This website was born <br></br>
-            {updateTime()} days ago.
+            {lastUpdate()}
           </div>
         </div>
       </div>
