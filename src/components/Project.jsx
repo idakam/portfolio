@@ -13,13 +13,14 @@ const Project = ({
   github,
 }) => {
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      exit={{ opacity: 0, y: 20 }}
-      className="flex flex-col md:flex-row h-full"
-    >
-      <div className="flex flex-col md:mr-[5%] justify-center md:w-1/2 h-auto group opacity-85">
+    <div className="flex flex-col md:flex-row h-full">
+      <motion.div
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 3 }}
+        exit={{ opacity: 0, y: -20 }}
+        className="flex flex-col md:mr-[5%] justify-center md:w-1/2 h-auto group opacity-85"
+      >
         <Image
           className="object-contain  md:max-h-full min-w-0 pb-3 md:pb-0 group-hover:opacity-20 "
           src={projectImg}
@@ -51,11 +52,17 @@ const Project = ({
             </a>
           ) : null}
         </div>
-      </div>
-      <div className="bg-white bg-opacity-30 p-2 overflow-auto shadow-xl md:w-1/2 h-1/2s">
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 3 }}
+        exit={{ opacity: 0, y: 20 }}
+        className="bg-white bg-opacity-30 p-2 overflow-auto shadow-xl md:w-1/2 h-1/2s"
+      >
         {p1}
-      </div>
-    </motion.div>
+      </motion.div>
+    </div>
   );
 };
 
