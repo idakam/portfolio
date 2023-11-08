@@ -1,6 +1,7 @@
 import React, { PropsWithChildren } from "react";
 import Navbar from "./Navbar";
 import Main from "./Main";
+import { motion } from "framer-motion";
 
 const Layout = ({ children }: PropsWithChildren) => {
   return (
