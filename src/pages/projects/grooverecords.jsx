@@ -18,10 +18,8 @@ const VinylShop = () => {
           </span>
           . Visitors can look through the product inventory, filter products by
           searching and add them to their cart.
-        </p>
-      }
-      p2={
-        <p>
+          <br></br>
+          <br></br>
           Visitors can also create an account to edit and finalize their orders
           through token-based authentication and password-hashing via
           JSON-web-token. Administrator accounts can update product inventory
