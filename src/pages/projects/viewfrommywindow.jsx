@@ -1,6 +1,6 @@
 import React from "react";
 import Project from "../../components/Project";
-import projectImg from "../../../public/assets/projects/viewfrommywindow.png";
+import projectImg from "../../../public/assets/projects/viewfrommywindow.webp";
 const ViewFromMyWindow = () => {
   return (
     <Project
