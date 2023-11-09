@@ -22,7 +22,7 @@ const Project = ({
         className="relative flex flex-col md:mr-[5%] items-center justify-center md:w-1/2 h-auto group opacity-85"
       >
         <Image
-          className="object-contain md:max-h-full min-w-0 pb-3 md:pb-0 md:group-hover:opacity-20 "
+          className="object-contain md:max-h-full min-w-0 pb-3 md:pb-0 md:group-hover:opacity-20 w-auto"
           src={projectImg}
           alt="/"
           priority
@@ -64,34 +64,36 @@ const Project = ({
       >
         {p1}
       </motion.div>
-      <motion.div
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 3 }}
-        exit={{ opacity: 0, y: -20 }}
-        className="flex flex-row md:hidden bg-white bg-opacity-30 p-2 items-center justify-around"
-      >
-        {deployed ? (
-          <a target="_blank" href={deployed} rel="noopener noreferrer">
-            <p
-              target="_blank"
-              className="text-center font-bold text-lg cursor-pointer hover:scale-105 hover:text-red-700"
-            >
-              Deployed
-            </p>
-          </a>
-        ) : null}
-        {github ? (
-          <a target="_blank" href={github} rel="noopener noreferrer">
-            <p
-              target="_blank"
-              className="text-center font-bold text-lg cursor-pointer hover:scale-105 hover:text-red-700"
-            >
-              Github
-            </p>
-          </a>
-        ) : null}
-      </motion.div>
+      {deployed || github ? (
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 3 }}
+          exit={{ opacity: 0, y: -20 }}
+          className="flex flex-row md:hidden bg-white bg-opacity-30 p-2 items-center justify-around"
+        >
+          {deployed ? (
+            <a target="_blank" href={deployed} rel="noopener noreferrer">
+              <p
+                target="_blank"
+                className="text-center font-bold text-lg cursor-pointer hover:scale-105 hover:text-red-700"
+              >
+                Deployed
+              </p>
+            </a>
+          ) : null}
+          {github ? (
+            <a target="_blank" href={github} rel="noopener noreferrer">
+              <p
+                target="_blank"
+                className="text-center font-bold text-lg cursor-pointer hover:scale-105 hover:text-red-700"
+              >
+                Github
+              </p>
+            </a>
+          ) : null}
+        </motion.div>
+      ) : null}
     </div>
   );
 };
