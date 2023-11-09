@@ -22,7 +22,7 @@ const Project = ({
         className="relative flex flex-col md:mr-[5%] items-center justify-center md:w-1/2 h-auto group opacity-85"
       >
         <Image
-          className="object-contain md:max-h-full min-w-0 pb-3 md:pb-0 md:group-hover:opacity-20 w-auto"
+          className="object-contain md:max-h-full  min-w-0 pb-3 md:pb-0 md:group-hover:opacity-20"
           src={projectImg}
           alt="/"
           priority
