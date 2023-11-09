@@ -13,44 +13,46 @@ const Project = ({
   github,
 }) => {
   return (
-    <div className="flex flex-col md:flex-row h-full">
+    <div className="flex flex-col md:flex-row h-full justify-between">
       <motion.div
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 3 }}
         exit={{ opacity: 0, y: -20 }}
-        className="flex flex-col md:mr-[5%] justify-center md:w-1/2 h-auto group opacity-85"
+        className="relative flex flex-col md:mr-[5%] items-center justify-center md:w-1/2 h-auto group opacity-85"
       >
         <Image
-          className="object-contain  md:max-h-full min-w-0 pb-3 md:pb-0 group-hover:opacity-20 "
+          className="object-contain md:max-h-full min-w-0 pb-3 md:pb-0 md:group-hover:opacity-20 "
           src={projectImg}
           alt="/"
-          priority="true"
+          priority
           sizes="100vw"
           width={600}
           height={450}
         ></Image>
-        <div className="hidden group-hover:block absolute top-[50%] left-[38%] translate-x-[-50%] translate-y-[-50%]">
-          {deployed ? (
-            <a target="_blank" href={deployed} rel="noopener noreferrer">
-              <p
-                target="_blank"
-                className="text-center py-3 font-bold text-lg cursor-pointer hover:scale-105"
-              >
-                Deployed
-              </p>
-            </a>
-          ) : null}
-          {github ? (
-            <a target="_blank" href={github} rel="noopener noreferrer">
-              <p
-                target="_blank"
-                className="text-center py-3 font-bold text-lg cursor-pointer hover:scale-105"
-              >
-                Github
-              </p>
-            </a>
-          ) : null}
+        <div id="text-overlay" className="hidden md:block">
+          <div className="hidden group-hover:block absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+            {deployed ? (
+              <a target="_blank" href={deployed} rel="noopener noreferrer">
+                <p
+                  target="_blank"
+                  className="text-center font-bold  text-lg cursor-pointer hover:scale-105 hover:text-red-700"
+                >
+                  Deployed
+                </p>
+              </a>
+            ) : null}
+            {github ? (
+              <a target="_blank" href={github} rel="noopener noreferrer">
+                <p
+                  target="_blank"
+                  className="text-center font-bold text-lg cursor-pointer hover:scale-105 hover:text-red-700"
+                >
+                  Github
+                </p>
+              </a>
+            ) : null}
+          </div>
         </div>
       </motion.div>
       <motion.div
@@ -58,9 +60,37 @@ const Project = ({
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 3 }}
         exit={{ opacity: 0, y: 20 }}
-        className="bg-white bg-opacity-30 p-2 overflow-auto shadow-xl md:w-1/2 h-1/2s"
+        className="bg-white bg-opacity-30 p-2 overflow-auto shadow-xl md:w-1/2 mb-3 md:mb-0 "
       >
         {p1}
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 3 }}
+        exit={{ opacity: 0, y: -20 }}
+        className="flex flex-row md:hidden bg-white bg-opacity-30 p-2 items-center justify-around"
+      >
+        {deployed ? (
+          <a target="_blank" href={deployed} rel="noopener noreferrer">
+            <p
+              target="_blank"
+              className="text-center font-bold text-lg cursor-pointer hover:scale-105 hover:text-red-700"
+            >
+              Deployed
+            </p>
+          </a>
+        ) : null}
+        {github ? (
+          <a target="_blank" href={github} rel="noopener noreferrer">
+            <p
+              target="_blank"
+              className="text-center font-bold text-lg cursor-pointer hover:scale-105 hover:text-red-700"
+            >
+              Github
+            </p>
+          </a>
+        ) : null}
       </motion.div>
     </div>
   );
