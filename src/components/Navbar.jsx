@@ -88,7 +88,7 @@ const Navbar = () => {
       (timeDifference % (1000 * 3600 * 24)) / (1000 * 3600)
     );
     const minutes = Math.floor((timeDifference % (1000 * 3600)) / (1000 * 60));
-    const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+    // const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
 
     // Initialize an array to store the time parts
     const timeParts = [];
@@ -105,9 +105,9 @@ const Navbar = () => {
       timeParts.push(`${minutes} minute${minutes === 1 ? "" : "s"}`);
     }
 
-    if (seconds > 0) {
-      timeParts.push(`${seconds} second${seconds === 1 ? "" : "s"}`);
-    }
+    // if (seconds > 0) {
+    //   timeParts.push(`${seconds} second${seconds === 1 ? "" : "s"}`);
+    // }
 
     // Construct the sentence
     let sentence = "Last updated: ";
