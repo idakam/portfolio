@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 import React, { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose, AiOutlineMail } from "react-icons/ai";
 import head from "../../public/assets/face.png";
+import { motion } from "framer-motion";
 
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 

@@ -1,5 +1,9 @@
 import { Html, Head, Main, NextScript } from "next/document";
 
+import GoogleAnalytics from "@/components/GoogleAnalytics";
+
+import Script from "next/script";
+
 export default function Document() {
   return (
     <Html lang="en">
@@ -11,6 +15,8 @@ export default function Document() {
           rel="stylesheet"
         />
       </Head>
+      {/* <GoogleAnalytics /> */}
+
       <body>
         <Main />
         <NextScript />
