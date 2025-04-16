@@ -10,12 +10,13 @@ const About = () => {
       projectImg={selfie}
       p1={
         <p>
-          Ida Kamali is a full-stack software engineer and artist with a passion
+          {/* Ida Kamali is a web developer and designer with a passion
           for creating immersive and visually engaging applications. They are in
           pursuit of experiences centered around music, web design, community
           engagement, and computational experimentation. Ida is currently
           working for NeighborShare as a Software Engineer and are open to work.
-          Full cv available upon request.
+          Full cv available upon request. */}
+          Ida Kamali is a web developer and designer with a passion for creating immersive, accessible, and visually engaging applications. They are driven by a curiosity for computational experimentation and a desire to build tools that streamline workflows, increase engagement, and make everyday experiences easier. Ida is currently open to work. Full CV available upon request.
           <br></br>
           <br></br>
           When not coding, they are baking bread, surfing wikipedia or painting.
