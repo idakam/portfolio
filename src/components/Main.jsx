@@ -12,10 +12,10 @@ const Main = () => {
   return (
 
     <div className="flex flex-col items-center">
-      {/* <ModelViewer modelPath={"/assets/faceblend.glb"} /> */}
+      {/* <ModelViewer modelPath={"/assets/faceblend.glb"} />
       <div className="flex justify-center">
         <Image className="h-full w-auto" src={head} alt="/" />
-      </div>
+      </div> */}
       <div className="bg-white bg-opacity-30 p-2 overflow-auto shadow-xl">
         Be back shortly...
       </div>
