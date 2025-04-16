@@ -4,12 +4,14 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import GltfModel from "./GltfModel";
 
-const ModelViewer = ({ modelPath, scale = 40, position = [0, 0, 0] }) => {
+const ModelViewer = ({ modelPath, scale = 2, position = [0, 0, 0] }) => {
   return (
     <Canvas
       colormanagement="true"
       shadowmap="true"
-      camera={{ position: [0, 0, 2], fov: 60 }}
+      camera={{ position: [20, 0, 10], fov: 50 }}
+      gl={{ alpha: true }}
+      style={{ background: "transparent" }}
     >
       {/* <ambientLight intensity={0.3} />
       <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />

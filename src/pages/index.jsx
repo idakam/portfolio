@@ -4,6 +4,8 @@ import Beatdriver from "./projects/beatdriver";
 import head from "../../public/assets/face.png";
 import Project from "../components/Project";
 // import logo from "../../public/assets/logo.png"
+// import ModelViewer from "../components/Three/ModelViewer";
+
 
 export default function Home() {
   return (
@@ -12,6 +14,7 @@ export default function Home() {
         <title>Ida Kamali</title>
         <link rel="icon" href="/assets/logo.png" />
       </Head>
+      {/* <ModelViewer modelPath={"/assets/faceblend.glb"} /> */}
 
       <Project
         type="Home"
