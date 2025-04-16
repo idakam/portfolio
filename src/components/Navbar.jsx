@@ -19,6 +19,7 @@ const Navbar = () => {
   const listOfLinks = [
     // ["About", "/about"],
     ["BeatDriver", "/projects/beatdriver"],
+    ["SmartRoute", "/projects/routingdelivery"],
     ["Groove Records", "/projects/grooverecords"],
     ["3D Pose Detection", "/projects/posedetection"],
     ["View From My Window", "/projects/viewfrommywindow"],
