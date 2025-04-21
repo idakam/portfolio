@@ -17,7 +17,6 @@ const Navbar = () => {
   };
 
   const listOfLinks = [
-    // ["About", "/about"],
     ["BeatDriver", "/projects/beatdriver"],
     ["SmartRoute", "/projects/routingdelivery"],
     ["Groove Records", "/projects/grooverecords"],
@@ -46,36 +45,7 @@ const Navbar = () => {
     ],
   ];
 
-  const updateTime = () => {
-    let now = new Date();
-    const birth = new Date("June 20, 2023 19:47:00");
 
-    // setTimeout(() => {
-    //   const millis = Date.now() - start;
-
-    //   console.log(`seconds elapsed = ${Math.floor(millis / 1000)}`);
-    //   // Expected output: "seconds elapsed = 2"
-    // }, 2000);
-
-    // To calculate the time difference of two dates
-    let timeDifference = now.getTime() - birth.getTime();
-
-    // To calculate the no. of days between two dates
-    let dayDifference = Math.trunc(timeDifference / (1000 * 3600 * 24));
-
-    return dayDifference;
-  };
-
-  // const lastUpdate = () => {
-  //   let now = new Date();
-  //   const update = new Date("Oct 24, 2023 14:25:00");
-
-  //   // To calculate the time difference of two dates
-  //   let timeDifference = now.getTime() - birth.getTime();
-
-  //   // To calculate the no. of days between two dates
-  //   let dayDifference = Math.trunc(timeDifference / (1000 * 3600 * 24));
-  // };
 
   const lastUpdate = () => {
     const now = new Date();
@@ -107,9 +77,6 @@ const Navbar = () => {
       timeParts.push(`${minutes} minute${minutes === 1 ? "" : "s"}`);
     }
 
-    // if (seconds > 0) {
-    //   timeParts.push(`${seconds} second${seconds === 1 ? "" : "s"}`);
-    // }
 
     // Construct the sentence
     let sentence = "Last updated: ";

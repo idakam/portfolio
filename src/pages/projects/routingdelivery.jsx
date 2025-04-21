@@ -17,7 +17,7 @@ const PoseDetection = () => {
       
       </p>
       }
-      github="https://github.com/idakam/interactiveRoom"
+      github="https://github.com/idakam/Routing_Delivery"
     />
   );
 };
