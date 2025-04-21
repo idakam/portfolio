@@ -49,7 +49,7 @@ const Navbar = () => {
 
   const lastUpdate = () => {
     const now = new Date();
-    const update = new Date("Dec 2, 2024 15:24:00");
+    const update = new Date("April 21, 2025 15:24:00");
 
     // Calculate the time difference in milliseconds
     const timeDifference = now.getTime() - update.getTime();
