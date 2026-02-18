@@ -22,6 +22,7 @@ const Navbar = () => {
     ["Groove Records", "/projects/grooverecords"],
     ["3D Pose Detection", "/projects/posedetection"],
     ["View From My Window", "/projects/viewfrommywindow"],
+    ["Paintings", "/misc/painting"]
   ];
 
   const listOfButtons = [

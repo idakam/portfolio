@@ -1,15 +1,47 @@
 import React from "react";
+import FloatingGrid from "../../components/FloatingGrid";
+// import image from "../../../public"
+const paintings = [
+  {
+    image: "/assets/paintings/bathroom.JPG",
+    description: "Sunflower bloom, 2024"
+  },
+  {
+    image: "/assets/paintings/Breakfast.JPG",
+    description: "Moonlight over water, 2023"
+  },
+  {
+    image: "/assets/paintings/chair.jpg",
+    description: "Untitled abstract, 2025"
+  },
+  {
+    image: "/assets/paintings/chess.jpg",
+    description: "Untitled abstract, 2025"
+  },
+  {
+    image: "/assets/paintings/dots.png",
+    description: "Untitled abstract, 2025"
+  },
+  {
+    image: "/assets/paintings/drawing.png",
+    description: "Untitled abstract, 2025"
+  },
+  {
+    image: "/assets/paintings/pool.png",
+    description: "Untitled abstract, 2025"
+  },
+  {
+    image: "/assets/paintings/stool.jpg",
+    description: "Untitled abstract, 2025"
+  },
 
-const Painting = () => {
+];
+
+const GalleryPage = () => {
   return (
-    <div id="about" className="lg:mx-[10%] 2xl:mx-[15%]">
-      <p className="uppercase text-xl tracking-widest text-red-700 ">Art</p>
-      <h1 className="py-4 uppercase">Painting</h1>
-      <div className="flex flex-col">
-        <p className="py-2  tracking-widest">Coming soon...</p>
-      </div>
-    </div>
+      // <FloatingGrid items={paintings} />
+      <div className="flex flex-col md:flex-row h-full justify-between"></div>
   );
 };
 
-export default Painting;
+export default GalleryPage;

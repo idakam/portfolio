@@ -13,6 +13,9 @@ const Layout = ({ children }: PropsWithChildren) => {
         <div className="flex md:ml-[5%] md:flex-row md:w-5/6 h-full">
           <div>{children}</div>
         </div>
+        {/* <div className="w-full fixed">
+          <div>{children}</div>
+        </div> */}
 
       </div>
     </div>
