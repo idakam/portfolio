@@ -22,7 +22,8 @@ const Project = ({
         exit={{ opacity: 0, y: -20 }}
         className="relative flex flex-col md:mr-[5%] items-center justify-center md:w-1/2 h-auto group opacity-85"
       >
-        <Image
+        {typeof projectImg === "string" || projectImg?.src ? (
+         <Image
           className={
             deployed || github
               ? "object-contain md:max-h-full  min-w-0 pb-3 md:pb-0 md:group-hover:opacity-20"
@@ -35,6 +36,10 @@ const Project = ({
           width={600}
           height={450}
         ></Image>
+        ) : (
+          projectImg
+        )}
+       
         <div id="text-overlay" className="hidden md:block">
           <div className="hidden group-hover:block absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
             {deployed ? (
@@ -104,4 +109,3 @@ const Project = ({
 };
 
 export default Project;
-
